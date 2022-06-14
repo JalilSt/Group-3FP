@@ -1,1 +1,15 @@
+.title {
+    text-align: center;
+}
 
+#description {
+    padding-top: 50px;
+}
+
+#form-footer {
+    padding-top: 50px;
+}
+
+#create {
+    text-align: right;
+}
