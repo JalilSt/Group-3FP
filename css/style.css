@@ -10,6 +10,47 @@
     padding-top: 50px;
 }
 
-#create {
-    text-align: right;
+#new-task {
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+
+#create-task {
+    margin-top: 50px;
+}
+
+.card {
+    margin-top: 4px;;
+}
+
+.todo-head {
+    border:3px solid #ffc107;
+    border-radius: 3px;
+    background-color: #ffc107;
+    color: white;
+}
+
+.done {
+    border:3px solid #28a745;
+    border-radius: 3px;
+    background-color: #28a745;
+    color: white;
+}
+
+#task-cards {
+    padding: 12px;
+    text-align: center;
+}
+
+.card-body {
+    text-align: left;
+}
+
+h5.card-title {
+    margin-bottom: 0;
+}
+
+.nameDate {
+    display: flex;
+    justify-content: space-between;
 }
