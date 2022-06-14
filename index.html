@@ -13,45 +13,49 @@
     <h1 class="title">Task Manager</h1>
     <div class="row">
       <div class="col">
-        <button type="button" id="new-task" class="btn btn-primary btn-md" data-toggle="collapse" data-target="#jumbo" aria-expanded="false" aria-controls="collapseExample">New Task</button>
+        <button type="button" id="new-task" class="btn btn-primary btn-md" data-toggle="modal" data-target="#jumbo" aria-controls="modal">New Task</button>
       </div>
     </div>
     <div class="row-fluid">
       <div class="col-12">
-        <div class="collapse" id="jumbo">
-          <div class="jumbotron" id="task-form">
-            <h1>Add Task</h1>
-            <form>
-              <div class="row">
-                <div class="col">
-                  <input type="text" class="form-control" placeholder="Name">
+        <div class="modal fade" id="jumbo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="jumbotron" id="task-form">
+              <h1>Add Task</h1>
+              <form>
+                <div class="row">
+                  <div class="col">
+                    <input type="text" class="form-control" placeholder="Name">
+                  </div>
+                  <div class="col">
+                    <input type="text" class="form-control" placeholder="Assigned To">
+                  </div>
                 </div>
-                <div class="col">
-                  <input type="text" class="form-control" placeholder="Assigned To">
+                <div class="row">
+                  <div class="col-12" id="description">
+                    <input type="text" class="form-control" placeholder="Description" rows="3">
+                  </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-12" id="description">
-                  <input type="text" class="form-control" placeholder="Description" rows="3">
+                <div class="row" id="form-footer">
+                  <div class="col">
+                    <input type="date" class="form-control" id="dueDate">
+                  </div>
+                  <div class="col">
+                    <select class="form-control" type="text" aria-placeholder="status">
+                      <option>To-do</option>
+                      <option>Done</option>
+                    </select>
+                  </div>
                 </div>
-              </div>
-              <div class="row" id="form-footer">
-                <div class="col">
-                  <input type="date" class="form-control" id="dueDate">
+                <div class="row">
+                  <div class="col">
+                    <button type="button" id="create-task" class="btn btn-primary btn-md float-right">Create Task</button>
+                  </div>
                 </div>
-                <div class="col">
-                  <select class="form-control" type="text" aria-placeholder="status">
-                    <option>To-do</option>
-                    <option>Done</option>
-                  </select>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col">
-                  <button type="button" id="create-task" class="btn btn-primary btn-md float-right">Create Task</button>
-                </div>
-              </div>
-            </form>
+              </form>
+            </div>
+            </div>
           </div>
         </div>
       </div>
@@ -65,7 +69,7 @@
               <div class="card-body">
                 <h5 class="card-title">Justin's Task</h5>
                   <div class="nameDate">
-                    <small>Assigned to Justin</small>
+                    <small>Assigned to Justin </small>
                     <small>Due 06/14/22</small>
                   </div>
                 <p>Finish Task 3 of the JWD final project.</p>
@@ -106,20 +110,33 @@
           <div class="row">
             <div class="card col-12">
               <div class="card-body">
-                <h5 class="card-title">Finished Task 1</h5>
-                <h6 class="card-subtitle"></h6>
+                <h5 class="card-title">Applied to Google</h5>
+                  <div class="nameDate">
+                    <small>Assigned to Justin</small>
+                    <small>Due 06/14/22</small>
+                  </div>
+                <p>Apply to google apprenticeship </p>
+                <button type="button" id="delete" class="btn btn-primary btn-danger btn-sm">Delete</button>
+                <button type="button" id="done-btn" class="btn btn-primary btn-success btn-sm">Done</button>
               </div>
             </div>
             <div class="card col-12">
               <div class="card-body">
-                <h5 class="card-title">Finished Task 2</h5>
+                <h5 class="card-title">Improve Resume</h5>
+                  <div class="nameDate">
+                    <small>Assigned to Justin</small>
+                    <small>Due 06/14/22</small>
+                  </div>
+                <p>Make edits to resume based on feedback.</p>
+                <button type="button" id="delete" class="btn btn-primary btn-danger btn-sm">Delete</button>
+                <button type="button" id="done-btn" class="btn btn-primary btn-success btn-sm">Done</button>
               </div>
             </div>
           </div>
         </div>
         </div>
       </div>
-    </dive>  
+    </div>  
   </div>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

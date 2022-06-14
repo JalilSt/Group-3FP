@@ -54,3 +54,7 @@ h5.card-title {
     display: flex;
     justify-content: space-between;
 }
+
+.jumbotron {
+    margin-bottom: 0;
+}
