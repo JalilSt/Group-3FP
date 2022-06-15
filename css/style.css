@@ -1,56 +1,66 @@
-.title {
+
+*{
+    box-sizing: border-box;
+}
+h3{
+    margin:20px;
     text-align: center;
+    color:darkgreen;
+   
+}
+    
+.btn-outline-success{
+    margin-left:10px;
+}
+.form-row{
+    margin-top:50px;
 }
 
-#description {
-    padding-top: 50px;
+.row-date-status{
+    margin-top:20px;
 }
 
-#form-footer {
-    padding-top: 50px;
+.col-date{
+    width:30%;
+    display: inline-block;
+  
+}
+.status{
+    width:20%;
+    float:right;
+   display: inline-block
+}
+body{
+    margin:0;
+    background-image:url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full%20page/img(11).webp");
+    font-weight: bold;
+}
+.row1{
+    margin-top:50px;
+}
+.btn-primary{
+    margin-top:20px;
 }
 
-#new-task {
-    margin-bottom: 20px;
-    margin-left: 15px;
+.card-deck{
+    margin-top: 20px;
+   
+}
+.btn-info, .btn-outline-primary, .btn-sm, .btn-outline-info{
+    float:right;
 }
 
-#create-task {
-    margin-top: 50px;
-}
 
-.card {
-    margin-top: 4px;;
+.duedate{
+    float:right;
+    display: inline-flex;
+    font-size: 12px;
+    
 }
-
-.todo-head {
-    border:3px solid #ffc107;
-    border-radius: 3px;
-    background-color: #ffc107;
-    color: white;
+.todo{
+    float:right;
 }
-
-.done {
-    border:3px solid #28a745;
-    border-radius: 3px;
-    background-color: #28a745;
-    color: white;
-}
-
-#task-cards {
-    padding: 12px;
-    text-align: center;
-}
-
-.card-body {
-    text-align: left;
-}
-
-h5.card-title {
-    margin-bottom: 0;
-}
-
-.nameDate {
-    display: flex;
+.card-text-todo{
+    display:flex;
     justify-content: space-between;
 }
